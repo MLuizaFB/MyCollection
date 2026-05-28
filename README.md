@@ -17,9 +17,9 @@ O aplicativo foi desenvolvido exclusivamente para praticar e consolidar meus con
 
 ## 🖼️ Screenshots (Demonstração)
 
-| Tela Inicial | Visualização do Item | Tela de Perfil |
-| :---: | :---: | :---: |
-| <img src="screenshots/print_inicial.png" width="250" alt="Tela Inicial"> | <img src="screenshots/print_item.png" width="250" alt="Visualização do Item"> | <img src="screenshots/print_perfil.png" width="250" alt="Tela de Perfil"> |
+|                               Tela Inicial                               |                             Visualização do Item                              |                              Tela de Perfil                               |
+|:------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|
+| <img src="screenshots/print_inicial.jpg" width="250" alt="Tela Inicial"> | <img src="screenshots/print_item.jpg" width="250" alt="Visualização do Item"> | <img src="screenshots/print_perfil.jgp" width="250" alt="Tela de Perfil"> |
 
 ## 🚀 Tecnologias e Arquitetura
 * **Kotlin** nativo
