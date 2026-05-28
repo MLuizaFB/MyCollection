@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
+    android:layout_marginTop="15dp"
     android:padding="16dp">
 
     <LinearLayout

@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/azulPrincipal"
-            android:padding="25dp">
+            android:padding="30dp">
 
             <ImageView
                 android:id="@+id/perfilIcon"
