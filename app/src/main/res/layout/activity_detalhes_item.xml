@@ -1,0 +1,74 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/botaoVoltar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_voltar"
+                android:contentDescription="Voltar"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/botaoExcluirItem"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_lixeira"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagemPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagem Principal"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/nomeItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Item"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/textos"/>
+
+        <TextView
+            android:id="@+id/descricaoItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição do item aqui."
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/textos"/>
+
+        <LinearLayout
+            android:id="@+id/layoutImagensSecundarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/btnVoltar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_voltar"
+            android:contentDescription="Voltar"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/btnEditarPerfil"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_edit"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Editar Perfil"/>
+
+        <ImageView
+            android:id="@+id/btnDeslogar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_logout"
+            android:contentDescription="Deslogar"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/>
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txtNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Usuário"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/textos" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txtMinhasColecoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minhas coleções"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/textos"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/btnEditarCategorias"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_config"
+            android:contentDescription="Editar Categorias"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCategoriasPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/azulPrincipal"
+            android:padding="25dp">
+
+            <ImageView
+                android:id="@+id/perfilIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/addIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="48dp"
+                android:src="@drawable/ic_add"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Collection"
+                android:textSize="24sp"
+                android:textStyle="italic|bold"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                app:layout_constraintTop_toBottomOf="@id/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoriasRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:padding="8dp"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:spanCount="2"/>
+
+        <LinearLayout
+            android:id="@+id/emptyStateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="80dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/fantasminha"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/fantasminha"
+                android:contentDescription="Fantasminha" />
+
+            <TextView
+                android:id="@+id/emptyMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nada por aqui..."
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+
